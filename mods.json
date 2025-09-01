@@ -1,17 +1,18 @@
 [
   {
-    "name": "Example Mod 1",
-    "description": "첫 번째 예시 모드입니다.",
-    "thumbnail": "thumb1.png",
-    "download": "files/mod1.zip",
-    "downloads": 123
+    "name": "Litematica 번역 리소스팩",
+    "description": "Litematica 번역 언어 리소스팩 입니다.",
+    "thumbnail": "image/thumb1.png",
+    "download": "files/Litematica.zip",
+    "downloads": 0
   },
   {
     "name": "Example Mod 2",
     "description": "두 번째 예시 모드입니다.",
-    "thumbnail": "thumb2.png",
+    "thumbnail": "image/thumb2.png",
     "download": "files/mod2.zip",
-    "downloads": 45
+    "downloads": 0
   }
 ]
+
 
