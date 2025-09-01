@@ -1,17 +1,30 @@
 [
   {
-    "version": "1.0",
-    "file": "mods/lightmeka_1.0_ko.zip",
-    "image": "images/lightmeka_1.0_ko.png"
+    "name": "Litematica 번역 리소스팩",
+    "description": "Litematica 번역 언어 리소스팩 입니다.",
+    "thumbnail": "image/thumb1.png",
+    "versions": [
+      {
+        "version": "1.20.1",
+        "download": "files/Litematica_1.20.1.zip"
+      },
+      {
+        "version": "1.19.4",
+        "download": "files/Litematica_1.19.4.zip"
+      }
+    ],
+    "downloads": 0
   },
   {
-    "version": "1.1",
-    "file": "mods/lightmeka_1.1_ko.zip",
-    "image": "images/lightmeka_1.1_ko.png"
-  },
-  {
-    "version": "1.2",
-    "file": "mods/lightmeka_1.2_ko.zip",
-    "image": "images/lightmeka_1.2_ko.png"
+    "name": "Example Mod 2",
+    "description": "두 번째 예시 모드입니다.",
+    "thumbnail": "image/thumb2.png",
+    "versions": [
+      {
+        "version": "1.18.2",
+        "download": "files/mod2_1.18.2.zip"
+      }
+    ],
+    "downloads": 0
   }
 ]
