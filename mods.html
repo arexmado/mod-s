@@ -1,41 +1,32 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>ModHub 다운로드</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LightMeka 한국어 번역 다운로드</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>ModHub</h1>
-        <nav>
-            <a href="index.html">홈</a> |
-            <a href="mods.html">다운로드</a>
-        </nav>
-    </header>
+  <header>
+    <h1>LightMeka 한국어 번역</h1>
+  </header>
 
-    <main>
-        <section class="mods-list">
-            <h2>모드 다운로드</h2>
-            <div class="mod-card">
-                <img src="thumbnail1.png" alt="모드 1 썸네일">
-                <h3>Litematica 번역 언어 리소스팩</h3>
-                <p>Litematica 번역 리소스팩</p>
-                <a class="btn" href="mods/Litematica.zip" download>다운로드</a>
-            </div>
+  <main>
+    <div class="download-card">
+      <img id="preview-image" src="images/lightmeka_1.0_ko.png" alt="LightMeka 1.0">
+      <select id="version-select">
+        <option value="0">버전 1.0</option>
+        <option value="1">버전 1.1</option>
+        <option value="2">버전 1.2</option>
+      </select>
+      <button id="download-btn">다운로드</button>
+    </div>
+  </main>
 
-            <div class="mod-card">
-                <img src="thumbnail2.png" alt="모드 2 썸네일">
-                <h3>mod meue 번역 리소스팩</h3>
-                <p>0%</p>
-                <a class="btn" href="mods/mod2.zip" download>다운로드</a>
-            </div>
-            <!-- 모드 카드 더 추가 가능 -->
-        </section>
-    </main>
+  <footer>
+    <p>© 2025 ModHub. All Rights Reserved.</p>
+  </footer>
 
-    <footer>
-        <p>© 2025 ModHub. All Rights Reserved.</p>
-    </footer>
+  <script src="scripts.js"></script>
 </body>
 </html>
