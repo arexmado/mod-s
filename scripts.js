@@ -1,24 +1,30 @@
-const files = [
-  { file: "mods/lightmeka_1.0_ko.zip", image: "images/lightmeka_1.0_ko.png" },
-  { file: "mods/lightmeka_1.1_ko.zip", image: "images/lightmeka_1.1_ko.png" },
-  { file: "mods/lightmeka_1.2_ko.zip", image: "images/lightmeka_1.2_ko.png" }
-];
+async function loadMods() {
+  const res = await fetch("mods.json");
+  const mods = await res.json();
+  const container = document.getElementById("mods-container");
 
-const select = document.getElementById("version-select");
-const img = document.getElementById("preview-image");
-const downloadBtn = document.getElementById("download-btn");
+  mods.forEach(mod => {
+    const card = document.createElement("div");
+    card.className = "mod-card";
 
-// 버전 선택 시 이미지 업데이트
-select.addEventListener("change", () => {
-  const index = select.value;
-  img.src = files[index].image;
-});
+    card.innerHTML = `
+      <img src="${mod.thumbnail}" alt="${mod.name}">
+      <h2>${mod.name}</h2>
+      <p>${mod.description}</p>
+      <select id="version-${mod.name}">
+        ${mod.versions.map(v => `<option value="${v.download}">${v.version}</option>`).join("")}
+      </select>
+      <button onclick="downloadMod('${mod.name}')">다운로드</button>
+    `;
 
-// 다운로드 버튼 클릭 시 해당 버전 파일 다운로드
-downloadBtn.addEventListener("click", () => {
-  const index = select.value;
-  const link = document.createElement("a");
-  link.href = files[index].file;
-  link.download = files[index].file.split("/").pop();
-  link.click();
-});
+    container.appendChild(card);
+  });
+}
+
+function downloadMod(modName) {
+  const select = document.getElementById(`version-${modName}`);
+  const url = select.value;
+  window.open(url, "_blank");
+}
+
+loadMods();
