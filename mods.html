@@ -2,26 +2,40 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>모드 다운로드</title>
+    <title>ModHub 다운로드</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>ModHub</h1>
         <nav>
-            <a href="index.htmll">홈</a> |
+            <a href="index.html">홈</a> |
             <a href="mods.html">다운로드</a>
         </nav>
     </header>
 
-    <main id="mod-container">
-        <!-- 모드 카드가 scripts.js로 로드됨 -->
+    <main>
+        <section class="mods-list">
+            <h2>모드 다운로드</h2>
+            <div class="mod-card">
+                <img src="thumbnail1.png" alt="모드 1 썸네일">
+                <h3>모드 이름 1</h3>
+                <p>모드 설명</p>
+                <a class="btn" href="mods/mod1.zip" download>다운로드</a>
+            </div>
+
+            <div class="mod-card">
+                <img src="thumbnail2.png" alt="모드 2 썸네일">
+                <h3>모드 이름 2</h3>
+                <p>모드 설명</p>
+                <a class="btn" href="mods/mod2.zip" download>다운로드</a>
+            </div>
+            <!-- 더 많은 모드 카드 추가 가능 -->
+        </section>
     </main>
 
     <footer>
         <p>© 2025 ModHub. All Rights Reserved.</p>
     </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
