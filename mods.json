@@ -2,7 +2,7 @@
   {
     "name": "Litematica 번역 리소스팩",
     "description": "Litematica 번역 언어 리소스팩 입니다.",
-    "thumbnail": "image/thumb1.png",
+    "thumbnail": "image/ChatGPT_Image_2025년_9월_2일_오후_07_02_12.png",
     "versions": [
       {
         "version": "1.21.5",
@@ -18,7 +18,7 @@
   {
     "name": "Example Mod 2",
     "description": "두 번째 예시 모드입니다.",
-    "thumbnail": "image/thumb2.png",
+    "thumbnail": "image/ChatGPT_Image_2025년_9월_2일_오후_07_02_12.png",
     "versions": [
       {
         "version": "1.18.2",
@@ -28,4 +28,5 @@
     "downloads": 0
   }
 ]
+
 
